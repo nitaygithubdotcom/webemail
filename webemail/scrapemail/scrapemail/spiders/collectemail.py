@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import scrapy
 
-with open('X:/git/webemail/webemail/scrapemail/scrapemail/websites.txt','r') as reader:
+with open('/app/webemail/scrapemail/websites.txt','r') as reader:
     x = reader.read()
     print(x)
 
