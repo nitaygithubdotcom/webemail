@@ -18,7 +18,7 @@ class CollectemailSpider(scrapy.Spider):
                 uniquemail = set(emails)
                 mail = set()
                 for i in uniquemail:
-                    if i.endswith('png') or i.endswith('jpg') or i.endswith('gif') or i.endswith('press') or i.endswith('food') or i.endswith('time') or i.endswith('test.com') or i.endswith('mail.com') or i.endswith('example.com') or i.endswith('press.io'):
+                    if i.endswith('png') or i.endswith('jpg') or i.endswith('gif') or i.endswith('press') or i.endswith('food') or i.endswith('time') or i.endswith('test.com') or i.endswith('mail.com') or i.endswith('example.com') or i.endswith('sentry.io'):
                         continue
                     else:
                         mail.add(i)
