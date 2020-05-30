@@ -2,21 +2,13 @@
 import scrapy
 import re
 
-# with open('/app/webemail/scrapemail/websites.txt','r') as reader:
-#     x = reader.readline()
-#     print(x)
 
 class CollectemailSpider(scrapy.Spider):
     name = 'collectemail'
 
-    # with open('/app/webemail/scrapemail/websites.txt','r') as reader:
-    #     x = reader.read()
-    #     print(x)
     web = open('websites.txt')
     lis = list(web)
-    print(lis)
-    for i in lis:
-        start_urls = ['http://www.rougecalgary.com/',i]
+    start_urls = [i for i in lis]
 
     def parse(self, response):
         Url = response.request.url
