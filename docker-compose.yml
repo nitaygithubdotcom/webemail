@@ -6,4 +6,5 @@ services:
         volumes: 
             - ./:/app/
         working_dir: /app/webemail
-        command: ["sleep","1000"]
+        # command: ["sleep","1000"]
+        command: ["sleep","crawl","collectemail","--nolog"]
