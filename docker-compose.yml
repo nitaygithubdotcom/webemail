@@ -7,4 +7,4 @@ services:
             - ./:/app/
         working_dir: /app/webemail/scrapemail
         # command: ["sleep","1000"]
-        command: ["scrapy","crawl","collectemail"]
+        command: ["scrapy","crawl","collectemail","--nolog"]
