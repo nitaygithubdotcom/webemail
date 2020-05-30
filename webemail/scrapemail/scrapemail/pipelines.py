@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+from pprint import pprint
 # Define your item pipelines here
 #
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
@@ -8,4 +8,5 @@
 
 class ScrapemailPipeline:
     def process_item(self, item, spider):
+        pprint(item)
         return item
