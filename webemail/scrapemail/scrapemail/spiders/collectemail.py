@@ -30,5 +30,5 @@ class CollectemailSpider(scrapy.Spider):
                 # emailid = 'N/A'
         except:
             pass
-        if emailid != '':
+        if "emailid" in locals() and emailid:
             yield {'Email':emailid, "Url":Url}
