@@ -7,4 +7,5 @@ services:
             - ./:/app/
         working_dir: /app/webemail/scrapemail
         # command: ["sleep","1000"]
-        command: ["scrapy","crawl","collectemail","-o","allemail.csv"]
+        command: ["scrapy","crawl","collectemail","-s","JOBDIR=crawls/collectemail-1","-o","emails.csv"]
+        
